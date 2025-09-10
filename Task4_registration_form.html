@@ -1,0 +1,55 @@
+
+<div style="background-color: #e3f1fa; padding: 20px; border-radius: 10px; max-width: 500p; font-family: Arial, Helvetica, sans-serif;">
+    <h3 style="color: #000000;"> Registration form </h3>
+    
+    <form>
+         <Div style="margin-bottom: 15px;">
+            <label for="Firstname" style="display: block; margin-bottom: 5px; font-weight: bold; color: black;"> First Name:</label>
+            <input type="text" id="Firstname" name="Firstname"
+                    style="width: 50%; padding: 8px; border: 2pt solid #ddd; border-radius: 5px;"
+                    placeholder="Enter Your First Name">
+        </Div>
+         <Div style="margin-bottom: 15px;">
+            <label for="lastname" style="display: block; margin-bottom: 5px; font-weight: bold; color: black;"> Last Name:</label>
+            <input type="text" id="lastname" name="lastname"
+                    style="width: 50%; padding: 8px; border: 2pt solid #ddd; border-radius: 5px;"
+                    placeholder="Enter Your last Name">
+        </Div>
+​
+        <Div style="margin-bottom: 15px;">
+            <label for="email" style="display: block; margin-bottom: 5px; font-weight: bold; color: black;"> Email:</label>
+            <input type="email" id="email" name="Email"
+                    style="width: 50%; padding: 8px; border: 2pt solid #ddd; border-radius: 5px;"
+                    placeholder="Your.email@example.com">
+        </Div>
+​
+         <div style="margin-bottom: 15px;">
+            <label for="age" style="display: block; margin-bottom: 5px;"><strong>Age:</strong></label>
+            <input type="number" id="age" min="1" max="100" placeholder=" Enter Your Age " 
+                   style="width: 20%; padding: 8px; border: 2px solid #ddd; border-radius: 5px;">
+        </div>
+​
+         <div style="margin-bottom: 15px;">
+             <label for="gener" style="display: block; margin-bottom: 5px; font-weight: bold; color: black;"> Gender:</label>
+                <p><label><input type="radio" name="gender" value="gender"> Male</label></p>
+                <p><label><input type="radio" name="gender" value="gender"> Fenale</label></p>
+               
+            </div>
+​
+             <div style="margin-bottom: 15px;">
+            <label for="interest" style="display: block; margin-bottom: 5px; font-weight: bold;">Interest:</label>
+            <select id="interest" name="interest" style="width: 50%; padding: 8px; border: 2px solid #ddd; border-radius: 5px;">
+                <option value="">Select your Interest</option>
+                <option value="jv">Javascript</option>
+                <option value="py">Python</option>
+                <option value="c++">C++</option>
+                <option value="php">PHP</option>
+                <option value="c#">C#</option>
+                <option value="ja">Java</option>
+            </select>
+        </div>
+         <button type="submit" style="background-color: #292a68; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer;">
+            Submit 
+        </button>
+    </form>
+</div>
