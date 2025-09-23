@@ -57,5 +57,65 @@ function weatherAdvice(temperature, isRaining) {
     } else if (temperature > 80) {
         return (`it's hot, stay hydrated`)
     }
-    advice = isRaining? "Bring an umbrella": no umbrella
+    advice = isRaining ? "Bring an umbrella" : "no Umbrella"
+    console.log(advice)
+}
+console.log(weatherAdvicece9(30, false))
+
+
+
+function atm(balance, action, amount) {
+    if (action === "withdraw") {
+        if (amount > 500) {
+            return `Transaction not Possible. cannot withdraw more than 500 at once`;
+        }
+
+        else if (amount > balance) {
+            return `insufficient funds`;
+
+        } else if (balance -= amount) {
+            return `withdrawl of ${amount} successsful. New balance: ${balance}`;
+        }
+    
+    } else if (action===deposite) {
+        balance + amount;
+        return `deposite of ${amount} Sucessful. New balance ${balance}`;
+    } else return`invalid action. choose either "deposit" or "withdraw"`
+}
+
+
+function personalAssistant(time, weather, dayType){
+  
+  if (time < 4 || time > 22) {
+    return `Please enter a valid hour between 4 and 22.`;
+  }
+  let greeting = "";
+  if (time < 12) {
+    greeting = "Good morning!";
+  } else {
+    greeting = "Good afternoon!";
+  }
+
+  // Advice based on day type and weather
+  if (dayType == "workday") {
+    if (weather =="rainy") {
+      return greeting + `It's a rainy workday. Take an umbrella`;
+    } else {
+      return greeting +  `Time to get ready for work. Have a productive day!`;
+    }
+  }
+
+  if (dayType === "weekend") {
+    if (weather === "sunny") {
+      return greeting + `It's sunny and it's the weekend`;
+    } else {
+      return greeting +  `Relax and enjoy your weekend indoors.`;
+    }
+  }
+
+  if (dayType === "holiday") {
+    return greeting + ` Happy holiday! Enjoy your free time`;
+  }
+
+  return `Please enter a valid day type: workday, weekend, or holiday.`;
 }
