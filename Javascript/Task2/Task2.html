@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button id="myButton">Click Me</button>
+
+    <script>
+        document.getElementById("myButton").onclick = function () {
+            // First Number
+            let num1 = 8;
+            // Second Number
+            let num2 = 3;
+            //Addition
+            let addition = num1 + num2;
+            //Subtraction
+            let subtraction = num1 - num2;
+            //Multiplication
+            let multiplication = num1 * num2;
+            //Division
+            let division = num1 / num2;
+            //Reminder
+            let remainder = num1 % num2;
+            //Exponentiation
+            let exponentiation = num1 ** num2;
+            //Average
+            let average = (num1 + num2) / 2;
+            //is the first number greater?
+            let isNum1Greater = num1 > num2;
+            //Which is the largest number
+            let larger = num1 > num2 ? num1 : num2;
+
+
+            //Output Display
+            console.log(`------Calculator-----`);
+            console.log(`Numbers: ${num1} and ${num2}`);
+            console.log(`Addition: ${addition}`);
+            console.log(`Subtraction: ${subtraction}`);
+            console.log(`Multiplication: ${multiplication}`);
+            console.log(`Division: ${division}`);
+            console.log(`Reminder: ${remainder}`);
+            console.log(`Exponentiation: ${exponentiation}`);
+            console.log(`Average: ${average}`);
+            console.log(`Is Num1 Greater than Num2: ${isNum1Greater}`);
+            console.log(`Between ${num1} and ${num2} the larger number is: ${larger}`);
+
+
+        }
+
+    </script>
+
+</body>
+
+</html>
