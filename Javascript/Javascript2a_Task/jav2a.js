@@ -60,7 +60,7 @@ function weatherAdvice(temperature, isRaining) {
     advice = isRaining ? "Bring an umbrella" : "no Umbrella"
     console.log(advice)
 }
-console.log(weatherAdvicece9(30, false))
+console.log(weatherAdvice(30, false))
 
 
 
@@ -68,12 +68,10 @@ function atm(balance, action, amount) {
     if (action === "withdraw") {
         if (amount > 500) {
             return `Transaction not Possible. cannot withdraw more than 500 at once`;
-        }
-
-        else if (amount > balance) {
+        } else if (amount > balance) {
             return `insufficient funds`;
 
-        } else if (balance -= amount) {
+        } else  {
             return `withdrawl of ${amount} successsful. New balance: ${balance}`;
         }
     
