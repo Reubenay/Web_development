@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,7 +9,63 @@
     <script src="app.js" defer></script>
 
 </head>
+
 <body>
-    
+    <div class="gen_container">
+        <header>
+            <h1>Student Performance Tracker</h1>
+        </header>
+
+        <div class="form">
+            <h2>Add Student</h2>
+            <form id="studentForm">
+                <div class="studentDetails">
+                    <div class="form_group">
+                        <label for="student name">Student Name</label>
+                        <input type="text" placeholder="Student name here">
+                    </div>
+
+                    <div class="form_group">
+                        <label for="student age">Age</label>
+                        <input type="number" placeholder="The Age of the student">
+                    </div>
+                    <div class="form_group">
+                        <label for="student Class">Student Class</label>
+                        <input type="text" placeholder="Student Class helre">
+                    </div>
+                </div>
+
+                <div class="form_group">
+                    <label for="student picture"> Image URl</label>
+                    <input type="text" placeholder="https://examples.com/image.jpg">
+                </div>
+
+
+                <div class="form_group">
+                    <label for="subject1"> First Subject score</label>
+                    <input type="text" placeholder="score">
+                </div>
+
+                <div class="form_group">
+                    <label for="subject2"> Second Subject score</label>
+                    <input type="text" placeholder="score">
+                </div>
+                <div class="form_group">
+                    <label for="subject3"> Third Subject score</label>
+                    <input type="text" placeholder="score">
+                </div>
+                <div class="button">
+                    <button type="submit">Add Student</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="student Records">
+        <h2>Student Record</h2>
+    </div>
+    </div>
+
 </body>
+
 </html>
